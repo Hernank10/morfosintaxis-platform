@@ -1,0 +1,118 @@
+.
+├── backend
+│   ├── config
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── settings.cpython-313.pyc
+│   │   │   ├── urls.cpython-313.pyc
+│   │   │   └── wsgi.cpython-313.pyc
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── db.sqlite3
+│   ├── manage.py
+│   └── requirements.txt
+├── core
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── docs
+│   └── estructura_proyecto.txt
+├── frontend
+├── learning
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── morfo_core
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-313.pyc
+│   │   ├── admin.cpython-313.pyc
+│   │   ├── apps.cpython-313.pyc
+│   │   └── models.cpython-313.pyc
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       └── __init__.cpython-313.pyc
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── morfo_learning
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-313.pyc
+│   │   ├── admin.cpython-313.pyc
+│   │   ├── apps.cpython-313.pyc
+│   │   └── models.cpython-313.pyc
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       └── __init__.cpython-313.pyc
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── morfo_users
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-313.pyc
+│   │   ├── admin.cpython-313.pyc
+│   │   ├── apps.cpython-313.pyc
+│   │   └── models.cpython-313.pyc
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       └── __init__.cpython-313.pyc
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── scripts
+├── users
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+└── venv
+    ├── bin
+    │   ├── Activate.ps1
+    │   ├── activate
+    │   ├── activate.csh
+    │   ├── activate.fish
+    │   ├── django-admin
+    │   ├── dotenv
+    │   ├── pip
+    │   ├── pip3
+    │   ├── pip3.13
+    │   ├── python -> python3.13
+    │   ├── python3 -> python3.13
+    │   ├── python3.13 -> /Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13
+    │   └── sqlformat
+    ├── include
+    │   └── python3.13
+    ├── lib
+    │   └── python3.13
+    │       └── site-packages
+    └── pyvenv.cfg
+
+32 directories, 84 files
