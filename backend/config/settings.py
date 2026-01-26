@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'morfo_accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,13 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'rest_framework',
-    'corsheaders',
+    #'morfo_accounts', # ✅ ahora sí   
+    #'rest_framework',
+    #'corsheaders',
 
-    'morfo_core',
-    'morfo_users',
-    'morfo_learning',
+    #'morfo_core',
+    #'morfo_users',
+    #'morfo_learning',
 ]
+
+AUTH_USER_MODEL = 'morfo_accounts.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
