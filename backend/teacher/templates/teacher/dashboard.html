@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="mb-4">🧑‍🏫 Panel del Profesor</h2>
+
+<h4>�� Mis cursos</h4>
+<ul class="list-group mb-4">
+  {% for course in courses %}
+    <li class="list-group-item">
+      {{ course.title }} ({{ course.language }} – {{ course.level }})
+    </li>
+  {% empty %}
+    <li class="list-group-item">No tienes cursos asignados.</li>
+  {% endfor %}
+</ul>
+
+<h4>📊 Progreso de estudiantes</h4>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Alumno</th>
+      <th>Lección</th>
+      <th>Dominio (%)</th>
+      <th>Completado</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for p in progress %}
+    <tr>
+      <td>{{ p.user.username }}</td>
+      <td>{{ p.lesson.title }}</td>
+      <td>{{ p.mastery }}</td>
+      <td>{% if p.completed %}✅{% else %}❌{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

@@ -27,28 +27,30 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
-# Application definition
-
 INSTALLED_APPS = [
-    'morfo_accounts',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
 
-    #'morfo_accounts', # ✅ ahora sí   
-    #'rest_framework',
-    #'corsheaders',
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
 
-    #'morfo_core',
-    #'morfo_users',
-    #'morfo_learning',
+    'apps.users.apps.UsersConfig',
+    'apps.courses.apps.CoursesConfig',
+    'apps.progress.apps.ProgressConfig',
+    'apps.lessons.apps.LessonsConfig',
+    'apps.certifications.apps.CertificationsConfig',
+    'apps.linguistics',    
+    'apps.submissions',   
+    'apps.core',
+    
+
+    "apps.contents",
+    "teacher",
 ]
 
-AUTH_USER_MODEL = 'morfo_accounts.User'
+AUTH_USER_MODEL = 'apps_users.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
