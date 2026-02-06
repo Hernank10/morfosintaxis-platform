@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     'apps.users.apps.UsersConfig',
-    'apps.courses.apps.CoursesConfig',
+    'courses.apps.CoursesConfig',
     'apps.progress.apps.ProgressConfig',
     'apps.lessons.apps.LessonsConfig',
     'apps.certifications.apps.CertificationsConfig',
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'apps.core',
     
 
-    "apps.contents",
+    "contents",
     "teacher",
 ]
 

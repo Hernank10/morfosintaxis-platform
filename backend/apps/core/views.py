@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from apps.courses.models import Course
+from courses.models import Course
 from apps.linguistics.models import LinguisticArea
 
 class HomeView(TemplateView):

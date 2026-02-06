@@ -1,5 +1,5 @@
 from django.db import models
-from apps.courses.models import Course
+from courses.models import Course
 from django.conf import settings
 
 

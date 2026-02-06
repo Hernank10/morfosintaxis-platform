@@ -1,4 +1,4 @@
-from apps.courses.models import Course
+from courses.models import Course
 from apps.lessons.models import Lesson
 from django.contrib.auth.decorators import login_required
 from morfo_accounts.decorators import teacher_required

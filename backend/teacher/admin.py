@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import TeacherProfile
 
-# Register your models here.
+@admin.register(TeacherProfile)
+class TeacherAdmin(admin.ModelAdmin):
+    list_display = ('user', 'bio')

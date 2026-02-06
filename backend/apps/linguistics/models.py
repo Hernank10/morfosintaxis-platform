@@ -1,18 +1,17 @@
 from django.db import models
+from apps.lessons.models import Lesson
 
 class LinguisticArea(models.Model):
-    name = models.CharField(max_length=100, verbose_name="Área Lingüística")
-    description = models.TextField(blank=True)
-
-    def __str__(self):
-        return self.name
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+    def __str__(self): return self.name
 
 class Exercise(models.Model):
-    # Estos nombres deben coincidir EXACTAMENTE con el admin.py
-    area = models.ForeignKey(LinguisticArea, on_delete=models.CASCADE, related_name='exercises')
-    title = models.CharField(max_length=200, verbose_name="Título")
-    instructions = models.TextField()
-    example_text = models.TextField(blank=True)
+    lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE, related_name='exercises', null=True)
+    area = models.ForeignKey(LinguisticArea, on_delete=models.CASCADE)
+    question = models.TextField()
+    correct_answer = models.TextField(help_text="La respuesta esperada")
+    feedback = models.TextField(help_text="Explicación pedagógica")
+    level = models.CharField(max_length=50, default='Básico')
 
-    def __str__(self):
-        return f"{self.area.name} - {self.title}"
+    def __str__(self): return f"{self.question[:50]}..."

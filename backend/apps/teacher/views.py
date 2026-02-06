@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from apps.users.decorators import teacher_required
-from apps.courses.models import Course
+from courses.models import Course
 from apps.progress.models import LessonProgress
 
 @teacher_required
